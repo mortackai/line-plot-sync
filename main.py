@@ -1,7 +1,9 @@
 import csv
-from functions import csv_find_row
+from functions import csvFindRow
+from functions import getListFromFile
 
-print(csv_find_row('curve2.csv',1,290))
+print(getListFromFile('filelist.txt'))
+print(csvFindRow('curve2.csv',1,290))
 
 
 
