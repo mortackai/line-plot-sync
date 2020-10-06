@@ -20,4 +20,4 @@ def getListFromFile(filename):
 	with open("filelist.txt") as index:
 		for line in index:
 			files.append(line.strip('\n'))
-	files
+	return files

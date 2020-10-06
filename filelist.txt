@@ -1,2 +1,7 @@
-curve.csv
+curve1.csv
 curve2.csv
+curve3.csv
+curve4.csv
+curve5.csv
+curve6.csv
+curve7.csv
