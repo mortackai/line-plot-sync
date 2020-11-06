@@ -1,44 +1,15 @@
 import csv
-def csvFindRow(file, columnNumber, searchNumber):
+import pandas as P
 
-    csv_f = csv.reader(open(file))
-    next(csv_f)
-    
-    for row in csv_f:
-        if float(row[columnNumber]) > searchNumber:
-            pass
-        else:
-            return(csv_f.line_num)
-            break
+# move import of file to a dataframe to another function
+def csv_find_row(df, columnNumber, searchValue):
+    resultIndex = df.iloc[:, 1].sub(searchValue).abs().idxmin()
+    return(resultIndex)
 
-def csvImport():
-    for i in range:
-        csv_f = csv.reader(open(loopfilename))
-
-def getListFromFile(filename):
+# temp file list import, will replace with gui version of file selection
+def get_list_from_file(filename):
 	files = []
 	with open("filelist.txt") as index:
 		for line in index:
 			files.append(line.strip('\n'))
 	return files
-
-# 2nd Stage Min Temp
-def minTemp(fileList, column):
-    for i, file in enumerate(fileList, start = 0):
-        print(fileList[i][0])
-        currentFile = csv.reader(open('test-curves/curve1.csv'))# + fileList[i][0]))
-        currentRow = fileList[i][1]
-        print(currentRow[0][0])
-        for row in currentFile:
-            if row[1] < x:
-                x = row[1]
-            else:
-                pass
-        print(x)
-            
-
-# 2nd Stage Average Temp
-#def avgTemp():
-
-# Return Max Temp
-#def maxTemp():
