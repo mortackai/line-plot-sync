@@ -10,10 +10,8 @@ from functions import upper_std_dev
 from functions import maxdf
 from functions import mindf
 
-
-
-columnHeaders = ['CH1_LSD', 'CH1_AVG', 'CH1_USD', 'CH1_MAX', 'CH1_MIN', 'CH2_LSD', 'CH2_AVG', 'CH2_USD', 'CH2_MAX', 'CH2_MIN']
-
+columnHeaders = ['CH1_LSD', 'CH1_AVG', 'CH1_USD', 'CH1_MAX', 'CH1_MIN',
+                 'CH2_LSD', 'CH2_AVG', 'CH2_USD', 'CH2_MAX', 'CH2_MIN']
 
 curveList = get_list_from_file('filelist.txt')
 
