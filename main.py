@@ -36,4 +36,4 @@ outputdf["CH2_USD"] = upper_std_dev(firstStgSensdf)
 outputdf["CH2_MAX"] = maxdf(firstStgSensdf)
 outputdf["CH2_MIN"] = mindf(firstStgSensdf)
 
-outputdf.to_csv('test.csv', index=False)
+outputdf.to_csv('output.csv', index=False)
