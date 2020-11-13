@@ -1,7 +1,7 @@
-import csv
+import tkinter as tk
+import easygui as eg
 import pandas as P
 from functions import csv_find_row
-from functions import get_list_from_file
 from functions import get_max_shift_index
 from functions import combine_columns
 from functions import lower_std_dev
@@ -13,7 +13,7 @@ from functions import mindf
 columnHeaders = ['CH1_LSD', 'CH1_AVG', 'CH1_USD', 'CH1_MAX', 'CH1_MIN',
                  'CH2_LSD', 'CH2_AVG', 'CH2_USD', 'CH2_MAX', 'CH2_MIN']
 
-curveList = get_list_from_file('filelist.txt')
+curveList = list(tk.filedialog.askopenfilenames())
 
 maxIndexShift = get_max_shift_index(curveList)
 
