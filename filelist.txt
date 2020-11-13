@@ -1,7 +1,0 @@
-test-curves/curve1.csv
-test-curves/curve2.csv
-test-curves/curve3.csv
-test-curves/curve4.csv
-test-curves/curve5.csv
-test-curves/curve6.csv
-test-curves/curve7.csv
